@@ -389,6 +389,11 @@ footer .credit a {
     transform: scaleX(0.2);
   }
 
+  .hero .content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 82%;
+  }
   .about .row {
     flex-wrap: wrap;
   }
@@ -409,31 +414,39 @@ footer .credit a {
   }
 
   .about .row .content p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
   }
 
   .menu p {
     font-size: 1.6rem;
     text-align: right;
-    max-width: 30rem;
+    max-width: 40rem;
     margin-left: auto;
     font-weight: 100;
     line-height: 1.4;
   }
 
+  .contact p {
+    font-size: 1.2rem;
+  }
+
   .contact .row {
     flex-wrap: wrap;
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   .contact .row .map {
-    height: 30rem;
+    height: 25rem;
     object-fit: cover;
     object-position: center;
+    padding: 1rem;
+    border-radius: 1.5rem;
   }
 
-  .contact .row form {
-    padding-top: 0;
+  .contact .row form .input-group {
+    margin: 0.5rem;
+    height: 12%;
   }
 }
 
