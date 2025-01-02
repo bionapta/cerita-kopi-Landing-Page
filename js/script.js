@@ -14,3 +14,22 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// Search
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('search-input');
+  const menuItems = document.querySelectorAll('.menu-card');
+
+  searchInput.addEventListener('input', (event) => {
+    const query = event.target.value.toLowerCase();
+
+    menuItems.forEach(item => {
+      const name = item.dataset.name.toLowerCase();
+      if (name.includes(query)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
